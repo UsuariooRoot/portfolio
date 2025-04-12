@@ -1,0 +1,30 @@
+---
+import { socialLinks } from "@/data/social";
+---
+
+<footer>
+  <div class="container mx-auto px-4 flex justify-between items-center">
+    <p class="text-gray-400">
+      Basado en el portafolio de
+      <a
+        href="https://github.com/Vengxdor/Vengxdor"
+        class="hover:underline hover:text-primary"
+        ><strong>Steven Fernandez</strong>
+      </a>
+    </p>
+    <div class="flex space-x-4 text-2xl">
+      {
+        socialLinks.map(({ platform, icon: Icon, href, hoverClass }) => (
+          <a
+            target="_blank"
+            class={`opacity-60 transition duration-300 ${hoverClass}`}
+            href={href}
+          >
+            <span class="sr-only">{platform}</span>
+            <Icon />
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</footer>

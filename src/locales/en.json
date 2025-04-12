@@ -1,0 +1,76 @@
+{
+    "nav": {
+      "home": "Inicio",
+      "about": "Sobre mí",
+      "projects": "Proyectos",
+      "contact": "Contacto",
+      "resume": "Curriculum"
+    },
+    "hero": {
+      "title": "Resultados reales, no solo líneas de código",
+      "description": "Hola, soy <strong>Dante Vilchez</strong>. Me dedico a desarrollar <strong>soluciones web de principio a fin</strong>: desde el backend que no ves al frontend que te enamora. Me apasiona construir cosas útiles, limpias y que no exploten (muy seguido). <strong>¿Un plus?</strong> Tengo sentido del humor incluso cuando hay bugs.",
+      "available": "Disponible",
+      "button-my-projects": "Ver mi trabajo",
+      "button-contact": "Contáctame"
+    },
+    "projects": {
+      "title": "Proyectos destacados",
+      "description": "Aquí se muestran algunos de mis proyectos recientes que muestran mis habilidades y experiencia en desarrollo web.",
+      "projects": [
+        {
+          "img": "/projects/project-joint.webp",
+          "title": "The Joint - Smoke shop",
+          "description": "Landing page for The Joint smoke shop that consistently attracts approximately <b>200 monthly visitors</b> since its launch on August 1, 2024. This sustained traffic represents over <b>1,400 total visitors</b> since launch, providing The Joint with continuous digital visibility in their local market. The design has maintained steady engagement over 7+ months, demonstrating its lasting effectiveness and reliability.",
+          "code": "https://github.com/Vengxdor/Budget-Buddy",
+          "link": "https://the-joint-sooty.vercel.app/",
+          "tech": [
+            "tailwind",
+            "astro"
+          ]
+        },
+        {
+          "img": "/projects/project-expense.webp",
+          "title": "Budget Buddy",
+          "description": "Intuitive expense tracker designed to help users monitor and categorize their daily expenses. The platform provides a comprehensive dashboard with clear visualizations to enhance financial awareness and promote better spending habits.",
+          "link": "https://budget-buddy-six.vercel.app/",
+          "code": "https://github.com/Vengxdor/Budget-Buddy",
+          "tech": [
+            "tailwind",
+            "nextjs",
+            "firebase"
+          ]
+        },
+        {
+          "img": "/projects/project-saritas.webp",
+          "title": "Sarita",
+          "description": "Developed a responsive website for Sarita's Flower Shop, integrating dynamic product displays and interactive contact forms, resulting in a <b>50% increase in customer inquiries</b> within the first two months. Enhanced user experience, <b>reducing bounce rate by 49%</b> and <b>increasing page views by 66%</b> through intuitive navigation, faster load times, and mobile optimization.",
+          "link": "https://sarita-sage.vercel.app/",
+          "code": "https://github.com/Vengxdor/Sarita",
+          "tech": [
+            "tailwind",
+            "astro"
+          ]
+        }
+      ]
+    },
+    "skills": {
+      "title": "Habilidades técnicas",
+      "description": "Tecnologías y herramientas con las que trabajo para crear experiencias web modernas"
+    },
+    "about": {
+      "title": "<span class='text-accent'>Sobre</span> mí",
+      "description": "Soy un desarrollador web apasionado por crear experiencias digitales...",
+      "tabs": {
+        "experience": "Experiencia",
+        "education": "Educación",
+        "skills": "Habilidades",
+        "story": "Mi historia"
+      }
+    },
+    "contact": {
+      "title": "Contáctame",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "send": "Enviar"
+    }
+  }

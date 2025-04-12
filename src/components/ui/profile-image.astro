@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets";
+---
+
+<Fragment>
+  <div
+    class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-accent relative z-10 mx-auto"
+  >
+    <Image
+      src="/author.webp"
+      alt="Steven Fernandez"
+      width={320}
+      height={320}
+      class="object-cover w-full h-full"
+      loading="eager"
+    />
+  </div>
+  <div
+    class="absolute inset-0 bg-accent rounded-full blur-3xl opacity-20 -z-10"
+  >
+  </div>
+</Fragment>

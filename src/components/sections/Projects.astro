@@ -1,0 +1,113 @@
+---
+import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
+import { Image } from "astro:assets";
+import { Code, ExternalLink } from "lucide-react";
+import { Badge } from "../ui/badge";
+import { buttonVariants } from "../ui/button";
+import { defaultLanguage, useTranslations } from "@/locales/i18n";
+
+const t = useTranslations(defaultLanguage);
+
+interface Tech {
+  name: string;
+  style: string;
+}
+
+const tech: Record<string, Tech> = {
+  react: { name: "React", style: "b#005f80" },
+  nextjs: {
+    name: "Next.js",
+    style: "bg-blue-500/10 text-blue-400 border-blue-500",
+  },
+  tailwind: {
+    name: "Tailwind CSS",
+    style: "bg-cyan-500/10 text-cyan-400 border-cyan-500",
+  },
+  firebase: {
+    name: "Firebase",
+    style: "bg-yellow-500/10 text-yellow-400 border-yellow-500",
+  },
+  astro: {
+    name: "Astro",
+    style: "bg-purple-500/10 text-purple-400 border-purple-500",
+  },
+};
+
+interface Project {
+  img: string;
+  title: string;
+  description: string;
+  link: string;
+  code?: string;
+  tech?: string[];
+}
+const projects: Project[] = t("projects.projects");
+---
+
+<section class="my-32" id="projects">
+  <header>
+    <h2 class="text-[46px] font-bold text-center">
+      {t("projects.title")}
+    </h2>
+    <p class="text-center text-sm opacity-70 mt-3">
+      {t("projects.description")}
+    </p>
+  </header>
+  <ul class="mt-10 grid grid-cols-1 lg:grid-cols-2 justify-center gap-8">
+    {
+      projects.map((project) => (
+        <li class="rounded-md">
+          <Card className="bg-black/40 border border-white/10 overflow-hidden group h-full flex flex-col">
+            <div class="relative overflow-hidden">
+              <Image
+                src={project.img}
+                alt={project.title}
+                width={600}
+                height={400}
+                class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+            <CardHeader className="pb-2">
+              <div class="flex flex-col justify-between gap-2">
+                <h3 class="text-2xl font-bold">{project.title}</h3>
+                <div class="flex gap-2 capitalize">
+                  {project?.tech?.map((tec) => (
+                    <Badge variant="outline" className={tech[tec].style}>
+                      {tech[tec].name}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent className="flex-grow">
+              <p
+                set:html={project.description}
+                class="text-white/70 [&>b]:text-accent line-clamp-[7]"
+              />
+            </CardContent>
+            <CardFooter className="flex justify-end gap-3">
+              {project.code && (
+                <a
+                  class={buttonVariants({ variant: "outline", size: "sm" })}
+                  href={project.code}
+                  target="_blank"
+                >
+                  <Code className="mr-2 h-4 w-4" /> View Code
+                </a>
+              )}
+              <a
+                class={buttonVariants({ variant: "default", size: "sm" })}
+                href={project.link}
+                target="_blank"
+              >
+                <ExternalLink className="mr-2 h-4 w-4" /> Visit Site
+              </a>
+            </CardFooter>
+          </Card>
+        </li>
+      ))
+    }
+  </ul>
+</section>

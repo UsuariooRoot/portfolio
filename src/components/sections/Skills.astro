@@ -1,0 +1,29 @@
+---
+import { skills } from "@/data/skills";
+import SkillCard from "./SkillCard.astro";
+import { defaultLanguage, useTranslations } from "@/locales/i18n";
+
+const t = useTranslations(defaultLanguage);
+---
+
+<section class="py-20 relative overflow-hidden">
+  <div class="absolute inset-0 z-0"></div>
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        {t("skills.title")}
+      </h2>
+      <p class="text-white/70 max-w-2xl mx-auto">
+        {t("skills.description")}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 md:gap-8">
+      {
+        skills.map((skill) => (
+          <SkillCard name={skill.name} icon={skill.icon} color={skill.color} />
+        ))
+      }
+    </div>
+  </div>
+</section>

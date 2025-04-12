@@ -1,0 +1,41 @@
+---
+import { BackgroundBeamsWithCollision } from '@/components/backgrounds/background-beams-with-collision';
+import Footer from './Footer.astro';
+import Header from './Header.astro';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html class='dark' lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="I'm Steven Fernandez, a frontend developer crafting modern, engaging web experiences. Check out my projects and contact me today!">
+		<meta name="keywords" content="Frontend Developer, UI/UX, Web Design, React, Tailwind CSS, Portfolio">
+		<meta name="author" content="Steven Fernandez">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="/favicon.png" type="image/x-icon">
+		<!-- <meta property="og:title" content="Steven Fernandez | Frontend Developer">
+		<meta property="og:description" content="Check out my web development projects and technical skills.">
+		<meta property="og:image" content="https://stevenfernandez.info/author.webp">
+		<meta property="og:url" content="https://stevenfernandez.info"> -->
+		<!-- <meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Steven Fernandez | Frontend Developer">
+		<meta name="twitter:description" content="Check out my portfolio and projects.">
+		<meta name="twitter:image" content="https://stevenfernandez.info/author.webp"> -->
+		<title>{title}</title>
+	</head>
+	<body>
+		<Header />
+		<div class='mx-auto w-11/12 pb-8 md:w-10/12 lg:max-w-[1000px]' >
+			<BackgroundBeamsWithCollision className='fixed inset-0 -z-10 bg-background' client:load/>
+			<slot />
+			<Footer />
+		</div>
+		<!-- <Analytics /> -->
+	</body>
+</html>

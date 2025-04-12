@@ -1,0 +1,24 @@
+---
+const { currentLang } = Astro.props;
+const currentPath = Astro.url.pathname;
+
+// Determinar las URLs para cada idioma
+let esUrl = '/';
+let enUrl = '/en/';
+
+// Si estamos en una sección específica con ancla, preservarla
+const hash = Astro.url.hash;
+if (hash) {
+  esUrl += hash;
+  enUrl += hash;
+}
+
+const activeClass = "bg-accent text-white";
+const inactiveClass = "text-white/60 hover:text-white";
+---
+
+<div class="flex gap-2 items-center">
+  <a href={esUrl} class={`text-sm px-2 py-1 rounded ${currentLang === 'es' ? activeClass : inactiveClass}`}>ES</a>
+  <span>/</span>
+  <a href={enUrl} class={`text-sm px-2 py-1 rounded ${currentLang === 'en' ? activeClass : inactiveClass}`}>EN</a>
+</div>

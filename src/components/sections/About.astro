@@ -1,0 +1,24 @@
+---
+import TabsAbout from "./TabsAbout";
+import ProfileImage from "../ui/profile-image.astro";
+import { defaultLanguage, useTranslations } from "@/locales/i18n";
+
+const t = useTranslations(defaultLanguage);
+---
+
+<section id="about" class="py-32">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      <div class="md:w-1/3 relative">
+        <ProfileImage />
+      </div>
+      <div class="md:w-2/3">
+        <h2
+          class="text-3xl md:text-4xl font-bold mb-6 flex items-center gap-3"
+          set:html={t("about.title")}
+        />
+        <TabsAbout client:load />
+      </div>
+    </div>
+  </div>
+</section>
