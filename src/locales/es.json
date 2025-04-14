@@ -9,7 +9,7 @@
   "hero": {
     "title": "Resultados reales, no solo líneas de código",
     "description": "Hola, soy <strong>Dante Vilchez</strong>. Me dedico a desarrollar <strong>soluciones web de principio a fin</strong>: desde el backend que no ves al frontend que te enamora. Me apasiona construir cosas útiles, limpias y que no exploten (muy seguido). <strong>¿Un plus?</strong> Tengo sentido del humor incluso cuando hay bugs.",
-    "available": "Disponible",
+    "available": "Disponible para trabajar",
     "button-my-projects": "Ver mi trabajo",
     "button-contact": "Contáctame"
   },
@@ -69,8 +69,17 @@
   },
   "contact": {
     "title": "Contáctame",
+    "description": "¿Estás interesado en trabajar juntos? Siéntete libre de contactarme a través del formulario de contacto o conecta conmigo en las redes sociales.",
     "email": "Correo electrónico",
+    "name": "Nombre",
+    "subject": "Asunto",
     "message": "Mensaje",
-    "send": "Enviar"
+    "send": "Enviar",
+    "placeholder": {
+      "name": "Tu nombre",
+      "email": "Tu correo electrónico",
+      "subject": "Asunto",
+      "message": "Tu mensaje"
+    }
   }
 }

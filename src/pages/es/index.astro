@@ -6,6 +6,9 @@ import Projects from '@/components/sections/Projects.astro'
 import Skills from '@/components/sections/Skills.astro'
 import Layout from '@/layouts/Layout.astro'
 import '@/styles/global.css'
+import { setSelectedLanguage } from '@/locales/i18n'
+
+setSelectedLanguage('es');
 ---
 
 <Layout title="Portafolio de Steven - Desarrollador Front-end">
@@ -16,4 +19,4 @@ import '@/styles/global.css'
     <About />
     <Contact />
   </main>
-</Layout> 
+</Layout>

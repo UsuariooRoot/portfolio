@@ -13,6 +13,7 @@ export default defineConfig({
     gfm: true,
     smartypants: true
   },
+  trailingSlash: 'ignore',
   i18n: {
     defaultLocale: 'es',
     locales: ['en', 'es'],

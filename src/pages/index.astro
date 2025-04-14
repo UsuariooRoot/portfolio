@@ -1,0 +1,31 @@
+---
+import Layout from '@/layouts/Layout.astro';
+---
+
+<Layout title="Redireccionando...">
+    <div class="loading-container">
+      <p>Cargando...</p>
+    </div>
+  
+    <script>
+      import { acceptedLanguages, defaultLanguage, handleLanguageChange, selectedLanguage, setSelectedLanguage, type Language } from '@/locales/i18n';
+      
+      function detectLanguage() {
+        const userLang = navigator.language?.split('-')[0];
+        const lang = userLang && acceptedLanguages.includes(userLang as Language) ? userLang : defaultLanguage;
+        handleLanguageChange(lang as Language);
+      }
+      
+      detectLanguage();
+    </script>
+  
+    <style>
+      .loading-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: system-ui, sans-serif;
+      }
+    </style>
+  </Layout>

@@ -4,9 +4,9 @@ import { buttonVariants } from "@/components/ui/button";
 import { socialLinks } from "@/data/social";
 import AvailableBtn from "@/components/ui/availabe-btn.astro";
 import ProfileImage from "@/components/ui/profile-image.astro";
-import { defaultLanguage, useTranslations } from "@/locales/i18n";
+import { selectedLanguage, useTranslations } from "@/locales/i18n";
 
-const t = useTranslations(defaultLanguage);
+const t = useTranslations(selectedLanguage);
 ---
 
 <section id="home" class="my-16 lg:my-44 flex flex-col lg:flex-row gap-4">

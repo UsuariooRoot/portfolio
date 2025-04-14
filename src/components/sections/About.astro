@@ -1,9 +1,9 @@
 ---
 import TabsAbout from "./TabsAbout";
 import ProfileImage from "../ui/profile-image.astro";
-import { defaultLanguage, useTranslations } from "@/locales/i18n";
+import { selectedLanguage, useTranslations } from "@/locales/i18n";
 
-const t = useTranslations(defaultLanguage);
+const t = useTranslations(selectedLanguage);
 ---
 
 <section id="about" class="py-32">

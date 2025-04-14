@@ -1,9 +1,9 @@
 ---
 import { skills } from "@/data/skills";
 import SkillCard from "./SkillCard.astro";
-import { defaultLanguage, useTranslations } from "@/locales/i18n";
+import { selectedLanguage, useTranslations } from "@/locales/i18n";
 
-const t = useTranslations(defaultLanguage);
+const t = useTranslations(selectedLanguage);
 ---
 
 <section class="py-20 relative overflow-hidden">

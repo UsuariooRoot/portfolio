@@ -1,3 +1,10 @@
+---
+import { selectedLanguage, useTranslations } from '@/locales/i18n';
+
+const t = useTranslations(selectedLanguage);
+---
+
+
 <span class="flex">
   <a
     target="_blank"
@@ -10,7 +17,7 @@
     <span
       class="inline-flex size-full cursor-pointer items-center justify-center rounded-full bg-background px-3 py-1 text-sm font-medium text-accent backdrop-blur-3xl"
     >
-      Avaible for work
+      {t("hero.available")}
     </span>
   </a>
 </span>

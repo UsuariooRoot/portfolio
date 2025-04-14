@@ -1,14 +1,17 @@
 ---
+import { selectedLanguage, useTranslations } from "@/locales/i18n";
 import EmailForm from "../forms/EmailForm";
 const accessKey = import.meta.env.PUBLIC_ACCESS_KEY
+
+const t = useTranslations(selectedLanguage);
+
 ---
 
 <section id="contact" class="container mx-auto px-4 py-20">
     <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">{t("contact.title")}</h2>
       <p class="text-white/70 max-w-2xl mx-auto">
-        Interested in working together? Feel free to reach out to me through the form below or connect with me on
-        social media.
+        {t("contact.description")}
       </p>
     </div>
 

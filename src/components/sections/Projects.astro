@@ -4,9 +4,9 @@ import { Image } from "astro:assets";
 import { Code, ExternalLink } from "lucide-react";
 import { Badge } from "../ui/badge";
 import { buttonVariants } from "../ui/button";
-import { defaultLanguage, useTranslations } from "@/locales/i18n";
+import { selectedLanguage, useTranslations } from "@/locales/i18n";
 
-const t = useTranslations(defaultLanguage);
+const t = useTranslations(selectedLanguage);
 
 interface Tech {
   name: string;

@@ -1,7 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
-import { defaultLanguage, useTranslations } from "@/locales/i18n";
+import { selectedLanguage, useTranslations } from "@/locales/i18n";
 
-const t = useTranslations(defaultLanguage);
+const t = useTranslations(selectedLanguage);
 
 const tabs = ["experience", "education", "skills", "story"]
 
