@@ -1,15 +1,18 @@
 ---
 import { socialLinks } from "@/data/social";
+import { selectedLanguage, useTranslations } from "@/locales/i18n";
+
+const t = useTranslations(selectedLanguage);
 ---
 
 <footer>
-  <div class="container mx-auto px-4 flex justify-between items-center">
+  <div class="container mx-auto h-16 px-4 flex justify-between items-center">
     <p class="text-gray-400">
-      Basado en el portafolio de
+      {t("footer.based-on")}
       <a
         href="https://github.com/Vengxdor/Vengxdor"
         class="hover:underline hover:text-primary"
-        ><strong>Steven Fernandez</strong>
+        ><strong>{t("footer.original-owner")}</strong>
       </a>
     </p>
     <div class="flex space-x-4 text-2xl">

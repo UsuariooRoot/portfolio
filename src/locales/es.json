@@ -81,5 +81,9 @@
       "subject": "Asunto",
       "message": "Tu mensaje"
     }
+  },
+  "footer": {
+    "based-on": "Basado en el portafolio de",
+    "original-owner": "Steven Fernandez"
   }
 }
