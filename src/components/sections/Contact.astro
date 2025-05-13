@@ -8,14 +8,14 @@ const t = useTranslations(selectedLanguage);
 ---
 
 <section id="contact" class="container mx-auto px-4 py-20">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">{t("contact.title")}</h2>
-      <p class="text-white/70 max-w-2xl mx-auto">
-        {t("contact.description")}
-      </p>
-    </div>
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">{t("contact.title")}</h2>
+    <p class="text-white/70 max-w-2xl mx-auto">
+      {t("contact.description")}
+    </p>
+  </div>
 
-    <div class="max-w-2xl mx-auto">
-      <EmailForm access={accessKey} client:idle/>
-    </div>
-  </section>
+  <div class="max-w-2xl mx-auto">
+    <EmailForm access={accessKey} lang={selectedLanguage} client:idle/>
+  </div>
+</section>

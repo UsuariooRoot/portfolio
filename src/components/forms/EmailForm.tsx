@@ -2,18 +2,15 @@ import { useRef } from "react"
 import { Button } from "../ui/button"
 import Swal from 'sweetalert2'
 import { Input } from "../ui/input"
-import { selectedLanguage, useTranslations } from "@/locales/i18n";
+import { useTranslations } from "@/locales/i18n";
 
-const t = useTranslations(selectedLanguage);
-
-export default function EmailForm({ access }: { access: string }) {
+export default function EmailForm({ access, lang }: { access: string, lang: string }) {
+  const t = useTranslations(lang)
   const formRef = useRef<HTMLFormElement>(null)
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     const formData = new FormData(event.currentTarget)
-
     formData.append("access_key", access)
-
 
     const object = Object.fromEntries(formData)
     const json = JSON.stringify(object)
@@ -28,7 +25,6 @@ export default function EmailForm({ access }: { access: string }) {
     }).then((res) => res.json())
 
     if (res.success) {
-
       if (formRef.current) {
         formRef.current.reset()
       }
