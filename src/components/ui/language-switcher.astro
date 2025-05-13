@@ -1,15 +1,14 @@
 ---
-const { currentLang } = Astro.props;
+import { selectedLanguage } from "@/locales/i18n";
 
 const activeClass = "bg-accent text-white";
 const inactiveClass = "text-white/60 hover:text-white";
-
 ---
 
 <div class="flex gap-2 items-center">
-  <button id="es-button" class={`text-sm px-2 py-1 rounded ${currentLang === 'es' ? activeClass : inactiveClass}`}>ES</button>
+  <button id="es-button" class={`text-sm px-2 py-1 rounded ${selectedLanguage === 'es' ? activeClass : inactiveClass}`}>ES</button>
   <span>/</span>
-  <button id="en-button" class={`text-sm px-2 py-1 rounded ${currentLang === 'en' ? activeClass : inactiveClass}`}>EN</button>
+  <button id="en-button" class={`text-sm px-2 py-1 rounded ${selectedLanguage === 'en' ? activeClass : inactiveClass}`}>EN</button>
 </div>
 
 <script>
