@@ -86,7 +86,7 @@ export default function EmailForm({ access, lang }: { access: string, lang: stri
           id="message"
           name="message"
           rows={6}
-          className="w-full px-4 py-3 bg-black/40 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent resize-none"
+          className="w-full px-4 py-3 bg-black/40 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent resize-none"
           placeholder={t("contact.placeholder.message")}
         ></textarea>
       </div>

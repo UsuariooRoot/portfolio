@@ -2,33 +2,24 @@
 export interface Props {
   name: string;
   icon: string;
-  color: string;
 }
 
-const { name, icon, color } = Astro.props;
-
-function getColorClasses(color: string) {
-  return {
-    bg: `from-${color}-500/10 to-${color}-600/20`,
-    border: `border-${color}-500/20 hover:border-${color}-500/50`,
-    text: `text-${color}-500 group-hover:text-${color}-400`
-  };
-}
-
-const colors = getColorClasses(color);
+const { name, icon } = Astro.props;
 ---
 
 <div class="group">
   <div
-    class={`bg-gradient-to-br ${colors.bg} p-6 rounded-xl border ${colors.border} flex flex-col items-center justify-center gap-3 transition-all duration-300 h-full`}
+    class={`p-6 rounded-xl border flex flex-col items-center justify-center gap-3 transition-all duration-300 h-full`}
   >
     <div
-      class={`w-12 h-12 flex items-center justify-center ${colors.text} group-hover:scale-110 transition-transform duration-300`}
+      class={`w-12 h-12 flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
     >
-      <Fragment set:html={icon} />
+      <svg width="48" height="48">
+        <image href={icon} width="48" height="48"/>
+      </svg>
     </div>
     <span
-      class={`font-medium text-white ${colors.text.split(' ')[1]} transition-colors`}
+      class={`font-medium text-white transition-colors`}
     >{name}</span>
   </div>
 </div>

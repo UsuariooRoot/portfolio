@@ -6,7 +6,7 @@ import { selectedLanguage, useTranslations } from "@/locales/i18n";
 const t = useTranslations(selectedLanguage);
 ---
 
-<section class="py-20 relative overflow-hidden">
+<section id="skills" class="py-20 relative overflow-hidden">
   <div class="absolute inset-0 z-0"></div>
   <div class="container mx-auto px-4 relative z-10">
     <div class="text-center mb-12">
@@ -21,7 +21,7 @@ const t = useTranslations(selectedLanguage);
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 md:gap-8">
       {
         skills.map((skill) => (
-          <SkillCard name={skill.name} icon={skill.icon} color={skill.color} />
+          <SkillCard name={skill.name} icon={skill.icon} />
         ))
       }
     </div>

@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "about": "About Me",
+    "skills": "Technologies",
     "projects": "Projects",
     "contact": "Contact",
     "resume": "Resume"
@@ -67,10 +68,37 @@
     "title": "<span class='text-accent'>About</span> Me",
     "description": "I’m a web developer passionate about creating digital experiences...",
     "tabs": {
-      "experience": "Experience",
-      "education": "Education",
-      "skills": "Skills",
-      "story": "My Story"
+      "experience": {
+        "label": "Experience",
+        "content": []
+      },
+      "education": {
+        "label": "Education",
+        "content": [
+          {
+            "learning-center": "Instituto de Educación Superior Privado accentec S.A.C",
+            "date": "2025 - Present"
+          }
+        ]
+      },
+      "skills": {
+        "label": "Skills",
+        "content": {
+          "description": "I actively work on strengthening my interpersonal skills to contribute more effectively in dynamic and team-oriented work environments. These include:",
+          "items": [
+            "Communication skills",
+            "Teamwork",
+            "Decision-making",
+            "Adaptability",
+            "Critical thinking",
+            "Continuous learning"
+          ]
+        }
+      },
+      "story": {
+        "label": "My Story",
+        "content": "Since I was a child, I’ve had a strong passion for series and movies related to technology. In 2023, I began studying Computer Science and Informatics at Instituto de Educación Superior Privado Cibertec S.A.C, where I’m currently enrolled. That same year, I started self-learning beyond the academic curriculum, diving deeper into various topics on my own."
+      }
     }
   },
   "contact": {

@@ -2,6 +2,7 @@
   "nav": {
     "home": "Inicio",
     "about": "Sobre mí",
+    "skills": "Tecnologías",
     "projects": "Proyectos",
     "contact": "Contacto",
     "resume": "Curriculum"
@@ -67,10 +68,37 @@
     "title": "<span class='text-accent'>Sobre</span> mí",
     "description": "Soy un desarrollador web apasionado por crear experiencias digitales...",
     "tabs": {
-      "experience": "Experiencia",
-      "education": "Educación",
-      "skills": "Habilidades",
-      "story": "Mi historia"
+      "experience": {
+        "label": "Experiencia",
+        "content": []
+      },
+      "education": {
+        "label": "Educación",
+        "content": [
+          {
+            "learning-center": "Instituto de Educación Superior Privado accentec S.A.C",
+            "date": "2025 - Present"
+          }
+        ]
+      },
+      "skills": {
+        "label": "Habilidades",
+        "content": {
+          "description": "Trabajo activamente en el fortalecimiento de mis habilidades interpersonales para contribuir mejor en entornos de trabajo dinámicos y en equipo. Estas incluyen:",
+          "items": [
+            "Facilidad comunicativa",
+            "Trabajo en equipo",
+            "Toma de decisiones",
+            "Adaptabilidad",
+            "Pensamiento crítico",
+            "Aprendizaje continuo"
+          ]
+        }
+      },
+      "story": {
+        "label": "Mi historia",
+        "content": "Desde pequeño sentí una gran pasión por las series y películas relacionadas con la tecnología. En 2023 inicié la carrera de Computación e Informática en Instituto de Educación Superior Privado accentec S.A.C, donde actualmente curso. Ese mismo año comencé a formarme de manera autodidacta, profundizando en temas más allá del contenido académico."
+      }
     }
   },
   "contact": {

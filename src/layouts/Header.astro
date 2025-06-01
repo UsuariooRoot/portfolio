@@ -15,6 +15,10 @@ const navItems = [
     link: "#projects",
   },
   {
+    title: t("nav.skills"),
+    link: "#skills",
+  },
+  {
     title: t("nav.about"),
     link: "#about",
   },
@@ -51,7 +55,7 @@ const navItems = [
       <LanguageSwitcher />
       <a
         href="/cv.pdf"
-        download="cv.pdf"
+        target="_blank"
         class={`${buttonVariants({ variant: "outline" })} hidden md:flex text-accent !bg-secondary/10 !border-accent`}
       >
         {t("nav.resume")}
