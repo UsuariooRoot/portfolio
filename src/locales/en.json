@@ -18,37 +18,43 @@
     "description": "Here are some of my recent projects showcasing my web development skills and experience.",
     "projects": [
       {
-        "img": "/projects/project-joint.webp",
-        "title": "The Joint - Smoke shop",
-        "description": "Landing page for The Joint smoke shop that consistently attracts approximately <b>200 monthly visitors</b> since its launch on August 1, 2024. This sustained traffic represents over <b>1,400 total visitors</b> since launch, providing The Joint with continuous digital visibility in their local market. The design has maintained steady engagement over 7+ months, demonstrating its lasting effectiveness and reliability.",
-        "code": "https://github.com/Vengxdor/Budget-Buddy",
-        "link": "https://the-joint-sooty.vercel.app/",
+        "img": "/projects/conecta4.png",
+        "title": "Connect 4 - Online",
+        "description": "The classic board game that challenges your strategic skills. Play online with friends or rivals.",
+        "code": "https://github.com/UsuariooRoot/conecta-4",
+        "link": "https://conecta4-production-99e2.up.railway.app",
         "tech": [
-          "tailwind",
-          "astro"
+          "css",
+          "react",
+          "express",
+          "socket-io"
         ]
       },
       {
-        "img": "/projects/project-expense.webp",
-        "title": "Budget Buddy",
-        "description": "Intuitive expense tracker designed to help users monitor and categorize their daily expenses. The platform provides a comprehensive dashboard with clear visualizations to enhance financial awareness and promote better spending habits.",
-        "link": "https://budget-buddy-six.vercel.app/",
-        "code": "https://github.com/Vengxdor/Budget-Buddy",
+        "img": "/projects/movie-reviews.webp",
+        "title": "Movie Reviews",
+        "description": "A website to watch trailers and get information about movies and series. A learning project using the TMDB API. A reverse proxy was implemented to avoid exposing the API KEY.",
+        "link": "https://movie-reviews-client-production.up.railway.app/",
+        "code": "https://github.com/UsuariooRoot/movies-review",
         "tech": [
-          "tailwind",
-          "nextjs",
-          "firebase"
+          "css",
+          "react",
+          "express"
         ]
       },
       {
-        "img": "/projects/project-saritas.webp",
-        "title": "Sarita",
-        "description": "Developed a responsive website for Sarita's Flower Shop, integrating dynamic product displays and interactive contact forms, resulting in a <b>50% increase in customer inquiries</b> within the first two months. Enhanced user experience, <b>reducing bounce rate by 49%</b> and <b>increasing page views by 66%</b> through intuitive navigation, faster load times, and mobile optimization.",
-        "link": "https://sarita-sage.vercel.app/",
-        "code": "https://github.com/Vengxdor/Sarita",
+        "img": "/projects/sgi.webp",
+        "title": "Incident Management System",
+        "description": "An incident management system that allows users to manage their incidents in a centralized way.",
+        "link": "https://sgi-client-production.up.railway.app/",
+        "code": "https://github.com/UsuariooRoot/SGI-Backend",
         "tech": [
-          "tailwind",
-          "astro"
+          "angular",
+          "angular-material",
+          "postgres",
+          "spring-boot",
+          "spring-security",
+          "jwt"
         ]
       }
     ]
