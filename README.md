@@ -1,8 +1,92 @@
-<h1 align="center">Hi 👋, I'm Steven Fernandez</h1>
-<h3 align="center">A passionate self-taught front-end developer. With 1 year of programming experience, I have acquired a solid set of skills in the field of web development. Since I discover web development I have been obsessed with programming, I have dedicated myself to learning autonomously and deepening my knowledge in different web technologies. I'm able to create impressive and dynamic user interfaces, ensuring that the websites that are developed are intuitive and accessible. My goal is to offer modern and elegant web solutions, taking full advantage of the latest technologies available. I work closely with clients to understand their goals and needs, ensuring that their vision becomes a digital reality. I'm excited about the opportunities for growth and development in the field of front-end web development and to collaborate on exciting projects and contribute my skills to make them happen. I look forward to working with you and bringing your ideas to digital life!</h3>
+# 💼 Dante Vilchez – Developer Portfolio
 
-<p align="left">
-</p>
+Welcome to the source code for my personal portfolio website. This site showcases who I am, what I do, and some of the work I’ve done as a full-stack web developer.
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
+---
+
+## 🌐 Live Website
+
+👉 [Visit the portfolio](https://portfolio-hazel-pi-77.vercel.app/)
+
+---
+
+## 📌 Sections
+
+- **Home** – Quick introduction and availability
+- **About Me** – My background, education, and soft skills
+- **Technologies** – Tools and frameworks I work with
+- **Projects** – Selected web development projects
+- **Contact** – Ways to get in touch
+- **Resume** – Downloadable CV
+
+---
+
+## 🚀 Hero Section
+
+> **"Real results, not just lines of code"**
+
+I'm **Dante Vilchez**, a web developer focused on delivering **end-to-end solutions**, from backend systems to polished frontends—with a bit of humor along the way.
+
+---
+
+## 🧠 Skills
+
+Technologies & tools I use:
+
+- Frontend: `React`, `Angular`, `Angular Material`, `CSS`
+- Backend: `Express`, `Spring Boot`, `Spring Security`, `JWT`
+- Database: `PostgreSQL`
+- Realtime: `Socket.IO`
+
+---
+
+## 🛠 Featured Projects
+
+### 🎮 Connect 4 - Online  
+**Description**: Classic game with online multiplayer  
+**Stack**: `React`, `Express`, `Socket.IO`, `CSS`  
+[🔗 Live](https://conecta4-production-99e2.up.railway.app) | [💻 Code](https://github.com/UsuariooRoot/conecta-4)
+
+---
+
+### 🎬 Movie Reviews  
+**Description**: Browse movies, watch trailers, learn details using the TMDB API (proxy-secured)  
+**Stack**: `React`, `Express`, `CSS`  
+[🔗 Live](https://movie-reviews-client-production.up.railway.app) | [💻 Code](https://github.com/UsuariooRoot/movies-review)
+
+---
+
+### 🛡 Incident Management System  
+**Description**: Centralized system for managing user incidents  
+**Stack**: `Angular`, `Spring Boot`, `Spring Security`, `JWT`, `PostgreSQL`  
+[🔗 Live](https://sgi-client-production.up.railway.app) | [💻 Code](https://github.com/UsuariooRoot/SGI-Backend)
+
+---
+
+## 🎓 Education
+
+- **2025 – Present**  
+  *Instituto de Educación Superior Privado Cibertec S.A.C*
+
+- **2023 – Present**  
+  *Instituto de Educación Superior Privado Cibertec S.A.C*  
+  *(Currently pursuing Computer Science and Informatics)*
+
+---
+
+## 🤝 Contact
+
+Interested in working together?  
+Use the contact form on the site or reach out via [LinkedIn/email/etc].
+
+---
+
+## 📝 Credits
+
+Based on the portfolio of [Steven Fernandez](https://github.com/stevenfernandez)
+
+---
+
+## 📄 License
+
+This project is open source under the [MIT License](LICENSE).
